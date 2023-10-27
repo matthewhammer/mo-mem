@@ -7,8 +7,10 @@ The example tool also exposes the image to MoVM, permitting Motoko scripts to an
 (Long term, the same Motoko code can analyze their own image files stored remotely on the IC.)
 
 ## ⚠️ WIP
-This repo depends on a special version of the Motoko compiler that exposes `prim "regionMainMemorySnapshot"`.  
-This feature is currently an open PR. 
+
+This repo depends on a special version of the Motoko compiler that exposes `prim "regionMainMemorySnapshot"`.
+
+[This feature is currently an open PR. ](https://github.com/dfinity/motoko/pull/4233)
 
 
 ## Contets
