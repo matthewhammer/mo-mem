@@ -1,0 +1,24 @@
+[package]
+name = "mo-mem"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ic-agent = "0.29.0"
+candid = "0.9.9"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+humantime = "2.1"
+byte-unit = "4.0"
+structopt = "0.3"
+structopt-derive = "0.4"
+strum = "0.21"
+strum_macros = "0.21"
+lalrpop-util = {version = "0.19", features = ["lexer"]}
+# motoko = "0.0"
+motoko = { path = "../../motoko.rs/crates/motoko" }
+motoko_proc_macro = "0.0"
+memmap = "0.7"
