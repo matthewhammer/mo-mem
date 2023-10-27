@@ -19,6 +19,28 @@ This repo depends on a special version of the Motoko compiler that exposes `prim
 - `rust/src/`
   - `main.rs` gives the CLI frontend of the example protocol.
 
+## Playing around
+
+### Compile and deploy
+
+- in `motoko/`, do `dfx deploy --network ic`
+- in `rust/`, do 
+  - `ln -s ../motoko/canister_ids.json .` to symbolically link the `canister_ids.json` file.
+  - `cargo run` to run the CLI tool.
+
+### CLI Commands
+
+- `info` checks the canister is there, but no snapshots.
+- `create` / `update` to create the first snapshot.
+- `pull` to download the first snapshot into a local file.
+- `eval "image.size()"` will produce the size of the file, in bytes.
+
+### Motoko VM integration
+
+The `eval` command uses MoVM to run Motoko programs that analyze the `image`.
+
+In each program, `image` is a value representing the memory-mapped file for the image (avoiding loading the entire thing into memory, since it could be big, and in the future, we may even want to load a bunch of them to compare them with a Motoko script.
+
 
 ## Next steps
 - Merge the compiler PR.
