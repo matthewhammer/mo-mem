@@ -16,7 +16,7 @@ This repo depends on a special version of the Motoko compiler that exposes `prim
 ## Contets
 - `motoko/`
   - `main.mo` gives the IC backend of the example protocol.
-- `rust/`
+- `rust/src/`
   - `main.rs` gives the CLI frontend of the example protocol.
 
 
