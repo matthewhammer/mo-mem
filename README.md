@@ -13,7 +13,7 @@ This repo depends on a special version of the Motoko compiler that exposes `prim
 [This feature is currently an open PR. ](https://github.com/dfinity/motoko/pull/4233)
 
 
-## Contets
+## Contents
 - `motoko/`
   - `main.mo` gives the IC backend of the example protocol.
 - `rust/src/`
