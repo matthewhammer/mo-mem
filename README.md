@@ -30,10 +30,18 @@ This repo depends on a special version of the Motoko compiler that exposes `prim
 
 ### CLI Commands
 
+To start out, try these commands, in this order:
+
 - `info` checks the canister is there, but no snapshots.
 - `create` / `update` to create the first snapshot.
 - `pull` to download the first snapshot into a local file.
 - `eval "image.size()"` will produce the size of the file, in bytes.
+
+More generally, 
+
+ - `update` and `create` will produce new snapshots for each invocation, 
+ - `pull` will download the latest one, and 
+ - `eval` will analyze the latest one (unless `-f` is supplied to it for a different image file).
 
 ### Motoko VM integration
 
